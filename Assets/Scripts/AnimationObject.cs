@@ -86,41 +86,41 @@ public class AnimationObject : MonoBehaviour {
 	*/
 	void OnCollisionEnter2D (Collision2D coll)
 	{
-        if(coll.gameObject.tag == "Target"){
-        	Debug.Log("Collision Enter SUCESS !");
-        }
-    }
-    /*===============================================================*/
+		if(coll.gameObject.tag == "Target"){
+			Debug.Log("Collision Enter SUCESS !");
+		}
+	}
+	/*===============================================================*/
 
-    /*===============================================================*/
+	/*===============================================================*/
 	/**
 	* @brief オブジェクトのコライダーと別のオブジェクトのコライダーが衝突している最中に毎フレーム呼び出され続ける関数.
 	* @param Collision2D 2D物理挙動で衝突により返される情報
 	* @return void
 	*/
-    void OnCollisionStay2D (Collision2D coll)
-    {
-        if(coll.gameObject.tag == "Target"){
-        	Debug.Log("Collision Stay SUCESS !");
-        }
-    }
-    /*===============================================================*/
+	void OnCollisionStay2D (Collision2D coll)
+	{
+		if(coll.gameObject.tag == "Target"){
+			Debug.Log("Collision Stay SUCESS !");
+		}
+	}
+	/*===============================================================*/
 
-    /*===============================================================*/
+	/*===============================================================*/
 	/**
 	* @brief オブジェクトのコライダーと別のオブジェクトコライダーが衝突から離れた瞬間に呼び出される関数.
 	* @param Collision2D 2D物理挙動で衝突により返される情報
 	* @return void
 	*/
-    void OnCollisionExit2D (Collision2D coll)
-    {
-        if(coll.gameObject.tag == "Target"){
-        	Debug.Log("Collision Exit SUCESS !");
-        }
-    }
-    /*===============================================================*/
+	void OnCollisionExit2D (Collision2D coll)
+	{
+		if(coll.gameObject.tag == "Target"){
+			Debug.Log("Collision Exit SUCESS !");
+		}
+	}
+	/*===============================================================*/
 
-    /*===============================================================*/
+	/*===============================================================*/
 	/**
 	* @brief 移動のアニメーションクリップを生成し開始する関数.
 	* @param Vector3 始点位置

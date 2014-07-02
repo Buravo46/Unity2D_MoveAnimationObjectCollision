@@ -42,7 +42,7 @@ public class TargetObject : MonoBehaviour {
 	{
     	if(collider.gameObject.tag == "PlayerObject"){
     		Debug.Log("Trigger Enter SUCESS !");
-        }
+		}
 	}
 	/*===============================================================*/
 
@@ -55,7 +55,7 @@ public class TargetObject : MonoBehaviour {
 	void OnTriggerStay2D (Collider2D collider){
 		if(collider.gameObject.tag == "PlayerObject"){
 			Debug.Log("Trigger Stay SUCESS !");
-        }
+		}
 	}
 	/*===============================================================*/
 
@@ -68,7 +68,7 @@ public class TargetObject : MonoBehaviour {
 	void OnTriggerExit2D (Collider2D collider){
 		if(collider.gameObject.tag == "PlayerObject"){
 			Debug.Log("Trigger Exit SUCESS !");
-        }
+		}
 	}
 	/*===============================================================*/
 }
